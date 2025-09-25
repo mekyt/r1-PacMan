@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 255, 0, 0.3);
+    border: 2px solid #ffd700;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    color: #ffd700;
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #ffd700;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#gameCanvas {
+    border: 3px solid #ffd700;
+    border-radius: 10px;
+    background: #000;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.5);
+}
+
+.controls {
+    margin: 20px 0;
+    color: #ccc;
+}
+
+.controls p {
+    margin: 5px 0;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    border: 3px solid #ff0000;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.5);
+}
+
+.game-over h2 {
+    color: #ff0000;
+    margin-top: 0;
+    font-size: 2em;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+.game-over button {
+    background: #ffd700;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.game-over button:hover {
+    background: #ffed4e;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+}
+
+/* Responsive design */
+@media (max-width: 850px) {
+    #gameCanvas {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+    
+    .game-container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
