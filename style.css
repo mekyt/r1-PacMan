@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:#000; color:#fffc; }
+.hud { display:flex; align-items:center; justify-content:center; gap:24px; padding:16px 12px; }
+.title { font-weight:700; letter-spacing:0.5px; color:#ff0; text-shadow:0 0 8px #660; }
+.score { color:#0ff; }
+button { background:#111; color:#fff; border:1px solid #333; padding:8px 12px; border-radius:6px; cursor:pointer; }
+button:hover { border-color:#555; }
+#game { display:block; margin:0 auto; image-rendering: pixelated; border:2px solid #222; box-shadow: 0 0 24px rgba(255,255,0,0.15) inset; }
+
